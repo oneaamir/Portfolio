@@ -1,0 +1,139 @@
+/* Global Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   border: none;
+   outline: none;
+   scroll-behavior: smooth;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* Root Variables */
+:root {
+   --bg-color: #000000;
+   --second-bg-color: #441212;
+   --text-color: #fff;
+   --main-color: rgb(255, 28, 28);
+   --neon-color: red;
+   --shadow-color: rgba(255, 0, 0, 0.7);
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body {
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+
+/* Section Styling */
+section {
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+}
+
+/* Header Styling */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 2rem 9%;
+   background: var(--bg-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+
+/* Contact Section */
+.contact {
+   width: 50%;
+   margin: auto;
+}
+
+/* Social Media Hover Effect */
+.social-media a:hover {
+   background: var(--main-color);
+   color: var(--second-bg-color);
+   box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Button Styles */
+.btn {
+   display: inline-block;
+   padding: 1rem 2.8rem;
+   background: var(--main-color);
+   border-radius: 4rem;
+   box-shadow: 0 0 1rem var(--main-color);
+   font-size: 1.6rem;
+   color: var(--second-bg-color);
+   letter-spacing: .1rem;
+   font-weight: 600;
+   transition: .5s ease;
+}
+
+.btn:hover {
+   box-shadow: none;
+}
+
+/* About Section */
+.about-img img {
+   width: 35rem;
+}
+
+/* Heading Styling */
+.heading {
+   text-align: center;
+   font-size: 4.5rem;
+   box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* Contact Form Styles */
+.contact form {
+   max-width: 70rem;
+   margin: 1rem auto;
+   text-align: center;
+   margin-bottom: 3rem;
+   box-shadow: 0 40px 200px var(--shadow-color);
+}
+
+/* Keyframes for Shaking Animation */
+@keyframes shake {
+   0% { transform: translateX(0); }
+   20% { transform: translateX(-5px); }
+   40% { transform: translateX(5px); }
+   60% { transform: translateX(-3px); }
+   80% { transform: translateX(3px); }
+   100% { transform: translateX(0); }
+}
+
+/* Input and Textarea Styles */
+.contact form .input-box input,
+.contact form textarea {
+   width: 100%;
+   padding: 1.5rem;
+   font-size: 1.6rem;
+   color: var(--text-color);
+   background: var(--second-bg-color);
+   border-radius: .8rem;
+   margin: .7rem 0;
+   animation: shake 1s ease forwards;
+}
+
+.contact form .input-box input {
+   width: 49%;
+}
+
+.contact form textarea {
+   resize: none;
+}
+
+.contact form .btn {
+   margin-top: 2rem;
+   cursor: pointer;
+}

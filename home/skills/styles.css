@@ -1,0 +1,156 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.percentage {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.1);
+    box-shadow: 
+        0 6px 30px rgba(255, 0, 0, 0.9),
+        0 0 15px rgba(255, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Section Styles */
+.progress-section {
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    width: 25px;
+    height: 20px;
+    margin: 10px 0;
+    background-color: #93050a;
+    transition: width 1s;
+    border-radius: 9px;
+    position: relative;
+}
+
+.progress-bar .skill-name,
+.progress-bar .percentage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.progress-bar.show .skill-name,
+.progress-bar.show .percentage {
+    opacity: 1;
+}
+
+/* Circular Section Styles */
+.circular-section {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #a20707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Skill Label Styles */
+.skill-label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d4e6f1;
+    text-align: center;
+}
+
+/* Section Title Styles */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d8efff;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 0 rgba(255, 60, 60, 0.7);
+}
+
+.section-title:hover {
+    background-color: rgba(205, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 50px;
+    background-color: #ff0606;
+}
+
+/* Heading Styles */
+h1 {
+    margin-top: 0;
+    margin-bottom: 5%;
+    font-size: 48px;
+    color: #e74c3c;
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 5px rgba(231, 76, 60, 0.7),
+        0 0 10px rgba(231, 76, 60, 0.7),
+        0 0 15px rgba(231, 76, 60, 0.7),
+        0 0 20px rgba(231, 76, 60, 0.7);
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    text-shadow: 
+        0 0 10px rgba(231, 76, 60, 1),
+        0 0 20px rgba(231, 76, 60, 1), 
+        0 0 30px rgba(231, 76, 60, 1), 
+        0 0 40px rgba(231, 76, 60, 1);
+}
